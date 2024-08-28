@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryptor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h1>Text Encryptor</h1>
+            <textarea id="inputText" placeholder="Ingrese el texto aquí..." oninput="validateInput()"></textarea>
+            <div class="buttons">
+                <button onclick="encryptText()">Encriptar</button>
+                <button onclick="decryptText()">Desencriptar</button>
+            </div>
+            <img src="images/encryption.png" alt="Encryption" class="image">
+        </div>
+        <div class="output-section">
+            <h2>Texto Encriptado/Desencriptado</h2>
+            <div class="output-background">
+                <textarea id="outputText" readonly placeholder="El texto encriptado/desencriptado aparecerá aquí..."></textarea>
+            </div>
+            <button onclick="copyText()" class="copy-button">Copiar Texto</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
